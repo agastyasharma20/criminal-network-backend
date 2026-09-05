@@ -1,0 +1,7 @@
+org_id,org_name,registration_number,business_type,registered_address,linked_person_ids
+ORG01,Ashvamedh Trading Solutions Pvt Ltd,U99999MP2025PTC000141,General trading / commodity broking (dormant filings),"Unit 12, Tilakwadi Commercial Complex, Block C, Nandanvan West",P0103|P0101|P0102
+ORG02,Girija Infra Consultants,U99999MP2024PTC000833,Infrastructure consultancy (single-client billing),"201, Girija Heights, Tilakwadi",P0101|P0201
+ORG03,Kaveri Depot Logistics Pvt Ltd,U99999MP2016PTC004512,Road freight and warehousing,"Kaveri Depot Yard, Ghatpimpri Road",P0202|P0201|P0204|P0205
+ORG04,Nandanvan Cold Storage LLP,AAZ-9911,Cold storage and perishable warehousing,"Plot 7, Nandanvan Industrial Belt",P0203|P0202|P0207
+ORG05,Sadhwani Trading Co.,U99999MP2017PTC002190,Wholesale FMCG distribution,"Shop 44, Vashisht Market, First Floor",P0206
+ORG06,Belsare Boutique & Handloom,U99999MP2019PTC006677,Retail apparel,"88, Devgiri Colony, Phase 1",P0304

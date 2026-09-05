@@ -1,0 +1,27 @@
+cell_tower_id,location_name,latitude,longitude,area
+CT-001,Tilakwadi Commercial Complex,22.662351,75.812954,Tilakwadi
+CT-002,Tilakwadi Bus Stand,22.676169,75.806843,Tilakwadi
+CT-003,Girija Heights Rooftop,22.686655,75.807226,Tilakwadi
+CT-004,Sanmitra Residency Junction,22.705485,75.808219,Tilakwadi
+CT-005,Vashisht Market North,22.716685,75.810796,Vashisht Market
+CT-006,Vashisht Market South,22.730114,75.813503,Vashisht Market
+CT-007,Chhota Bazaar Chowk,22.748332,75.8128,Chhota Bazaar
+CT-008,Purana Peth Water Tank,22.657996,75.833096,Purana Peth
+CT-009,Devgiri Colony Phase 1,22.673323,75.830525,Devgiri Colony
+CT-010,Devgiri Colony Phase 2,22.69009,75.836429,Devgiri Colony
+CT-011,Bhilwara Basti Sector 4,22.703088,75.83131,Bhilwara Basti
+CT-012,Ganjbasoda Lane East,22.715391,75.829705,Ganjbasoda
+CT-013,Ganjbasoda Outer Ring,22.72998,75.832657,Ganjbasoda
+CT-014,Nandanvan Industrial Belt,22.741901,75.831634,Nandanvan
+CT-015,Nandanvan Cold Storage Gate,22.6563,75.85912,Nandanvan
+CT-016,Shrivardhan Apartments Mast,22.673724,75.854272,Nandanvan
+CT-017,Nandanvan West Market,22.684758,75.856269,Nandanvan
+CT-018,Kaveri Depot Yard,22.69953,75.853539,Ghatpimpri
+CT-019,Ghatpimpri Toll Plaza,22.715841,75.859006,Ghatpimpri
+CT-020,Transport Nagar Quarters,22.733667,75.853778,Ghatpimpri
+CT-021,Ronghe Estate Road,22.742861,75.858389,Ghatpimpri
+CT-022,Sahastradhara Enclave,22.657836,75.883125,Vashisht Market
+CT-023,Ambika Bypass Km-14,22.677836,75.88145,Outer Ring
+CT-024,Ambika Bypass Km-31,22.690594,75.880388,Outer Ring
+CT-025,Rewa Gate Check Post,22.700211,75.88115,Outer Ring
+CT-026,Old Airport Cargo Road,22.714592,75.881807,Outer Ring

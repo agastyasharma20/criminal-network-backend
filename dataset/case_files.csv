@@ -1,0 +1,4 @@
+case_id,case_name,opened_date,status,linked_fir_ids,lead_investigator
+CASE-2026-01,Operation Ashvamedh - investment fraud and layered fund movement,2026-03-13,ACTIVE,FIR-2026-0388|FIR-2026-0393|FIR-2026-0401|FIR-2026-0428,Inspector A. Bhalerao
+CASE-2026-02,Operation Kaveri - cross-district smuggling and warehousing,2026-03-21,ACTIVE,FIR-2026-0409|FIR-2026-0417|FIR-2026-0422,Inspector D. Sonkusare
+CASE-2026-03,Nandanvan sector - miscellaneous property and local offences,2026-03-09,ROUTINE,FIR-2026-0371|FIR-2026-0379|FIR-2026-0396|FIR-2026-0433,Sub-Inspector P. Godambe

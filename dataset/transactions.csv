@@ -1,0 +1,226 @@
+transaction_id,sender_account_id,receiver_account_id,amount_inr,timestamp,transaction_type,bank_name,remarks
+TXN-0001,ACC0021,EXTERNAL-CASH,4000,2026-03-02 03:43:31,UPI,Vindhya Urban Bank,Supplier payment - handloom
+TXN-0002,ACC0008,ACC0009,216000,2026-03-02 06:35:10,RTGS,Vindhya Urban Bank,Reimbursement
+TXN-0003,ACC0008,ACC0009,265000,2026-03-02 10:31:00,NEFT,Vindhya Urban Bank,Reimbursement
+TXN-0004,ACC0021,EXTERNAL-CASH,8500,2026-03-02 16:14:42,UPI,Vindhya Urban Bank,Supplier payment - handloom
+TXN-0005,ACC0070,ACC0069,42800,2026-03-02 16:19:34,cash-deposit,Narmada National Bank,Mobile recharge
+TXN-0006,ACC0069,ACC0078,65100,2026-03-02 19:04:19,NEFT,Narmada National Bank,Rent
+TXN-0007,ACC0001,ACC0007,367000,2026-03-03 00:14:12,NEFT,Vindhya Urban Bank,Advisory charges
+TXN-0008,ACC0042,EXTERNAL-CASH,16600,2026-03-03 00:26:54,cash-deposit,Narmada National Bank,Society maintenance
+TXN-0009,ACC0049,ACC0077,63800,2026-03-03 00:27:11,cash-withdrawal,Sahyadri Cooperative Bank,Rent
+TXN-0010,ACC0070,ACC0001,75000,2026-03-03 00:36:01,NEFT,Narmada National Bank,Advance for allotment
+TXN-0011,ACC0001,ACC0008,190000,2026-03-03 04:07:05,IMPS,Vindhya Urban Bank,Professional fees
+TXN-0012,ACC0067,ACC0059,900,2026-03-03 04:59:37,UPI,Narmada National Bank,Grocery payment
+TXN-0013,ACC0022,EXTERNAL-CASH,63000,2026-03-03 09:36:14,cash-deposit,Chandrabhaga Bank Ltd,Scrap sale collection
+TXN-0014,ACC0016,ACC0013,67000,2026-03-03 14:57:32,UPI,Narmada National Bank,Trip advance
+TXN-0015,ACC0072,EXTERNAL-CASH,50500,2026-03-04 04:20:12,cash-deposit,Narmada National Bank,Grocery payment
+TXN-0016,ACC0046,ACC0036,81100,2026-03-04 10:16:33,IMPS,Ratnagiri Commercial Bank,Medical shop payment
+TXN-0017,ACC0046,ACC0027,49800,2026-03-04 11:26:43,NEFT,Ratnagiri Commercial Bank,Salary credit
+TXN-0018,ACC0006,ACC0001,505000,2026-03-04 14:00:00,cash-deposit,Narmada National Bank,Cash deposit - shop collection
+TXN-0019,ACC0057,ACC0039,31600,2026-03-04 15:49:08,NEFT,Chandrabhaga Bank Ltd,Electricity bill
+TXN-0020,ACC0021,EXTERNAL-CASH,29500,2026-03-04 23:34:36,UPI,Vindhya Urban Bank,Supplier payment - handloom
+TXN-0021,ACC0031,ACC0067,65500,2026-03-04 23:58:28,NEFT,Ratnagiri Commercial Bank,Insurance premium
+TXN-0022,ACC0043,EXTERNAL-CASH,19100,2026-03-05 07:41:23,UPI,Girnar Small Finance Bank,Fuel payment
+TXN-0023,ACC0020,EXTERNAL-CASH,14000,2026-03-05 09:00:00,UPI,Ratnagiri Commercial Bank,Rent - Shrivardhan Apartments 3B (shared)
+TXN-0024,ACC0058,ACC0001,145000,2026-03-05 12:35:59,UPI,Girnar Small Finance Bank,Advance for allotment
+TXN-0025,ACC0039,EXTERNAL-CASH,57400,2026-03-05 14:16:36,NEFT,Ratnagiri Commercial Bank,School fees
+TXN-0026,ACC0065,ACC0040,15400,2026-03-05 14:24:56,cash-withdrawal,Sahyadri Cooperative Bank,Mobile recharge
+TXN-0027,ACC0014,ACC0017,102000,2026-03-05 16:30:25,UPI,Narmada National Bank,Handling charges
+TXN-0028,ACC0018,EXTERNAL-CASH,18500,2026-03-05 20:00:00,UPI,Sahyadri Cooperative Bank,Rent - Sanmitra Residency flat 502
+TXN-0029,ACC0075,ACC0074,60000,2026-03-06 00:32:50,NEFT,Girnar Small Finance Bank,Society maintenance
+TXN-0030,ACC0050,ACC0001,75000,2026-03-06 02:58:35,IMPS,Narmada National Bank,Advance for allotment
+TXN-0031,ACC0064,EXTERNAL-CASH,3400,2026-03-06 09:43:12,NEFT,Ratnagiri Commercial Bank,Electricity bill
+TXN-0032,EXTERNAL-CASH,ACC0019,920000,2026-03-06 11:20:00,cash-deposit,Narmada National Bank,"Cash deposit - sale proceeds, land parcel Ganjbasoda survey 44/1 (sale deed ref GBS/2026/318)"
+TXN-0033,ACC0042,ACC0001,120000,2026-03-06 12:53:14,UPI,Narmada National Bank,Investment - Ashvamedh scheme
+TXN-0034,ACC0071,ACC0001,49000,2026-03-06 18:07:27,NEFT,Vindhya Urban Bank,Trading margin
+TXN-0035,ACC0039,EXTERNAL-CASH,41000,2026-03-06 21:28:45,NEFT,Ratnagiri Commercial Bank,Fixed deposit renewal
+TXN-0036,ACC0026,EXTERNAL-CASH,37300,2026-03-07 01:21:43,UPI,Ratnagiri Commercial Bank,Society maintenance
+TXN-0037,ACC0043,ACC0001,145000,2026-03-07 02:08:46,IMPS,Girnar Small Finance Bank,Investment - Ashvamedh scheme
+TXN-0038,ACC0069,ACC0037,51800,2026-03-07 05:46:01,NEFT,Narmada National Bank,Mobile recharge
+TXN-0039,ACC0026,ACC0018,61400,2026-03-07 06:30:00,NEFT,Ratnagiri Commercial Bank,Salary credit - night shift allowance
+TXN-0040,ACC0042,EXTERNAL-CASH,75300,2026-03-07 13:03:52,cash-withdrawal,Narmada National Bank,Fuel payment
+TXN-0041,ACC0067,EXTERNAL-CASH,64300,2026-03-07 15:11:45,cash-withdrawal,Narmada National Bank,Fixed deposit renewal
+TXN-0042,ACC0021,EXTERNAL-CASH,19500,2026-03-07 15:50:41,UPI,Vindhya Urban Bank,Supplier payment - handloom
+TXN-0043,ACC0052,EXTERNAL-CASH,67300,2026-03-07 21:30:52,UPI,Vindhya Urban Bank,Grocery payment
+TXN-0044,ACC0045,EXTERNAL-CASH,59400,2026-03-07 23:40:22,cash-deposit,Vindhya Urban Bank,Electricity bill
+TXN-0045,ACC0008,ACC0009,387000,2026-03-08 02:11:46,RTGS,Vindhya Urban Bank,Professional fees
+TXN-0046,ACC0051,ACC0001,75000,2026-03-08 08:34:13,NEFT,Vindhya Urban Bank,Booking amount
+TXN-0047,ACC0060,EXTERNAL-CASH,36700,2026-03-08 09:53:29,cash-withdrawal,Narmada National Bank,EMI - two wheeler loan
+TXN-0048,ACC0002,ACC0007,419000,2026-03-08 10:20:31,RTGS,Sahyadri Cooperative Bank,Advisory charges
+TXN-0049,ACC0065,ACC0033,24900,2026-03-08 14:26:54,IMPS,Sahyadri Cooperative Bank,Salary credit
+TXN-0050,ACC0063,ACC0073,7400,2026-03-08 16:37:08,IMPS,Chandrabhaga Bank Ltd,Fuel payment
+TXN-0051,ACC0062,EXTERNAL-CASH,29300,2026-03-09 04:36:04,cash-deposit,Vindhya Urban Bank,Transfer to family
+TXN-0052,ACC0026,ACC0060,37000,2026-03-09 05:56:24,NEFT,Ratnagiri Commercial Bank,Fixed deposit renewal
+TXN-0053,ACC0021,EXTERNAL-CASH,21500,2026-03-09 06:13:02,UPI,Vindhya Urban Bank,Supplier payment - handloom
+TXN-0054,ACC0056,ACC0076,46500,2026-03-09 09:20:39,cash-withdrawal,Ratnagiri Commercial Bank,Insurance premium
+TXN-0055,ACC0021,EXTERNAL-CASH,37500,2026-03-09 11:31:43,UPI,Vindhya Urban Bank,Supplier payment - handloom
+TXN-0056,ACC0008,ACC0009,309000,2026-03-09 12:12:10,IMPS,Vindhya Urban Bank,Advisory charges
+TXN-0057,ACC0061,EXTERNAL-CASH,46900,2026-03-09 16:57:38,IMPS,Girnar Small Finance Bank,Fuel payment
+TXN-0058,ACC0020,EXTERNAL-CASH,2340,2026-03-09 19:00:00,UPI,Ratnagiri Commercial Bank,Electricity bill payment
+TXN-0059,ACC0017,ACC0015,145000,2026-03-09 21:36:24,UPI,Vindhya Urban Bank,Storage rental
+TXN-0060,ACC0014,ACC0016,181000,2026-03-10 00:28:07,UPI,Narmada National Bank,Wages
+TXN-0061,ACC0002,ACC0007,143000,2026-03-10 04:11:09,IMPS,Sahyadri Cooperative Bank,Reimbursement
+TXN-0062,ACC0078,EXTERNAL-CASH,3600,2026-03-10 09:41:11,cash-deposit,Ratnagiri Commercial Bank,Fixed deposit renewal
+TXN-0063,ACC0008,ACC0009,375000,2026-03-10 12:05:00,NEFT,Vindhya Urban Bank,Logistics advisory - Q4 retainer
+TXN-0064,ACC0066,EXTERNAL-CASH,29600,2026-03-10 12:45:07,cash-withdrawal,Vindhya Urban Bank,Fixed deposit renewal
+TXN-0065,ACC0014,ACC0017,146000,2026-03-10 14:21:41,NEFT,Narmada National Bank,Diesel reimbursement
+TXN-0066,ACC0001,ACC0008,467000,2026-03-10 14:57:08,RTGS,Vindhya Urban Bank,Consultancy retainer
+TXN-0067,ACC0039,ACC0035,24600,2026-03-10 15:08:51,UPI,Ratnagiri Commercial Bank,Insurance premium
+TXN-0068,ACC0029,ACC0077,27300,2026-03-10 18:07:48,cash-withdrawal,Chandrabhaga Bank Ltd,Transfer to family
+TXN-0069,ACC0076,ACC0055,45700,2026-03-10 22:03:52,IMPS,Vindhya Urban Bank,Society maintenance
+TXN-0070,ACC0063,ACC0001,190000,2026-03-10 22:15:23,NEFT,Chandrabhaga Bank Ltd,Trading margin
+TXN-0071,ACC0056,EXTERNAL-CASH,33900,2026-03-10 23:39:55,NEFT,Ratnagiri Commercial Bank,EMI - two wheeler loan
+TXN-0072,ACC0016,ACC0013,123000,2026-03-11 06:51:03,IMPS,Narmada National Bank,Wages
+TXN-0073,ACC0064,EXTERNAL-CASH,29600,2026-03-11 07:57:13,cash-deposit,Ratnagiri Commercial Bank,Mobile recharge
+TXN-0074,EXTERNAL-CASH,ACC0019,870000,2026-03-11 10:45:00,cash-deposit,Narmada National Bank,"Cash deposit - sale proceeds, land parcel Ganjbasoda survey 44/2 (sale deed ref GBS/2026/319)"
+TXN-0075,ACC0057,ACC0035,63100,2026-03-11 15:25:20,IMPS,Chandrabhaga Bank Ltd,Medical shop payment
+TXN-0076,ACC0008,ACC0002,278000,2026-03-12 03:48:22,NEFT,Vindhya Urban Bank,Vendor settlement
+TXN-0077,ACC0031,ACC0026,2800,2026-03-12 05:02:40,cash-deposit,Ratnagiri Commercial Bank,Fixed deposit renewal
+TXN-0078,ACC0014,ACC0017,24000,2026-03-12 11:25:08,NEFT,Narmada National Bank,Wages
+TXN-0079,ACC0016,ACC0009,174000,2026-03-12 13:07:13,NEFT,Narmada National Bank,Handling charges
+TXN-0080,ACC0001,ACC0007,177000,2026-03-12 19:40:46,RTGS,Vindhya Urban Bank,Consultancy retainer
+TXN-0081,ACC0016,ACC0017,213000,2026-03-13 01:36:24,IMPS,Narmada National Bank,Handling charges
+TXN-0082,ACC0027,ACC0001,145000,2026-03-13 07:58:17,IMPS,Girnar Small Finance Bank,Booking amount
+TXN-0083,ACC0016,ACC0009,121000,2026-03-13 08:12:16,IMPS,Narmada National Bank,Wages
+TXN-0084,ACC0051,ACC0038,11900,2026-03-13 08:48:10,UPI,Vindhya Urban Bank,Grocery payment
+TXN-0085,ACC0006,ACC0001,300000,2026-03-13 15:00:00,cash-deposit,Narmada National Bank,Cash deposit - shop collection
+TXN-0086,ACC0077,ACC0001,98000,2026-03-14 00:55:33,UPI,Chandrabhaga Bank Ltd,Trading margin
+TXN-0087,ACC0075,EXTERNAL-CASH,40900,2026-03-14 00:59:38,IMPS,Girnar Small Finance Bank,Fixed deposit renewal
+TXN-0088,ACC0032,ACC0001,98000,2026-03-14 05:35:03,IMPS,Narmada National Bank,Trading margin
+TXN-0089,ACC0059,EXTERNAL-CASH,83600,2026-03-14 08:48:44,IMPS,Sahyadri Cooperative Bank,Fuel payment
+TXN-0090,ACC0043,EXTERNAL-CASH,81000,2026-03-14 13:29:32,UPI,Girnar Small Finance Bank,Transfer to family
+TXN-0091,ACC0066,ACC0077,37200,2026-03-14 16:03:53,cash-deposit,Vindhya Urban Bank,Salary credit
+TXN-0092,ACC0043,EXTERNAL-CASH,46300,2026-03-14 17:01:16,UPI,Girnar Small Finance Bank,EMI - two wheeler loan
+TXN-0093,ACC0049,ACC0001,190000,2026-03-14 18:44:15,NEFT,Sahyadri Cooperative Bank,Booking amount
+TXN-0094,ACC0037,ACC0001,145000,2026-03-14 18:48:25,UPI,Vindhya Urban Bank,Investment - Ashvamedh scheme
+TXN-0095,ACC0060,EXTERNAL-CASH,39400,2026-03-14 20:35:54,UPI,Narmada National Bank,Fixed deposit renewal
+TXN-0096,ACC0067,ACC0001,120000,2026-03-15 16:28:36,NEFT,Narmada National Bank,Commodity plan deposit
+TXN-0097,ACC0030,EXTERNAL-CASH,6600,2026-03-16 10:03:59,cash-withdrawal,Vindhya Urban Bank,Society maintenance
+TXN-0098,ACC0056,ACC0055,41100,2026-03-16 11:18:10,IMPS,Ratnagiri Commercial Bank,Society maintenance
+TXN-0099,ACC0028,EXTERNAL-CASH,79900,2026-03-16 11:33:27,NEFT,Ratnagiri Commercial Bank,Salary credit
+TXN-0100,EXTERNAL-CASH,ACC0019,950000,2026-03-16 12:15:00,cash-deposit,Narmada National Bank,"Cash deposit - sale proceeds, land parcel Ganjbasoda survey 44/3 (sale deed ref GBS/2026/320)"
+TXN-0101,ACC0009,ACC0011,240000,2026-03-16 15:22:00,NEFT,Ratnagiri Commercial Bank,Consultancy - warehouse audit
+TXN-0102,ACC0078,ACC0001,190000,2026-03-16 19:24:23,NEFT,Ratnagiri Commercial Bank,Advance for allotment
+TXN-0103,ACC0072,ACC0001,75000,2026-03-16 21:47:15,NEFT,Narmada National Bank,Advance for allotment
+TXN-0104,ACC0067,EXTERNAL-CASH,21400,2026-03-16 21:49:24,NEFT,Narmada National Bank,School fees
+TXN-0105,ACC0028,ACC0037,53500,2026-03-16 22:47:27,UPI,Ratnagiri Commercial Bank,Fuel payment
+TXN-0106,ACC0041,ACC0030,4700,2026-03-17 02:09:07,cash-withdrawal,Chandrabhaga Bank Ltd,School fees
+TXN-0107,ACC0064,ACC0001,49000,2026-03-17 02:15:24,IMPS,Ratnagiri Commercial Bank,Advance for allotment
+TXN-0108,ACC0065,ACC0001,145000,2026-03-17 02:54:55,IMPS,Sahyadri Cooperative Bank,Commodity plan deposit
+TXN-0109,ACC0043,ACC0028,24600,2026-03-17 07:28:18,cash-withdrawal,Girnar Small Finance Bank,Insurance premium
+TXN-0110,ACC0055,ACC0052,57800,2026-03-17 08:53:24,cash-deposit,Girnar Small Finance Bank,School fees
+TXN-0111,ACC0021,EXTERNAL-CASH,21000,2026-03-17 22:25:40,UPI,Vindhya Urban Bank,Supplier payment - handloom
+TXN-0112,ACC0017,ACC0015,131000,2026-03-18 01:35:34,NEFT,Vindhya Urban Bank,Wages
+TXN-0113,ACC0016,ACC0013,156000,2026-03-18 04:00:26,UPI,Narmada National Bank,Handling charges
+TXN-0114,ACC0064,ACC0073,69200,2026-03-18 04:14:25,IMPS,Ratnagiri Commercial Bank,School fees
+TXN-0115,ACC0019,ACC0027,150000,2026-03-18 11:00:00,NEFT,Narmada National Bank,Legal fees - conveyance
+TXN-0116,ACC0022,EXTERNAL-CASH,70000,2026-03-18 15:25:06,cash-deposit,Chandrabhaga Bank Ltd,Scrap sale collection
+TXN-0117,ACC0032,EXTERNAL-CASH,4800,2026-03-18 22:12:37,UPI,Narmada National Bank,Fixed deposit renewal
+TXN-0118,ACC0071,ACC0072,78000,2026-03-19 01:06:25,cash-deposit,Vindhya Urban Bank,Transfer to family
+TXN-0119,ACC0025,EXTERNAL-CASH,66600,2026-03-19 03:55:37,cash-deposit,Ratnagiri Commercial Bank,Mobile recharge
+TXN-0120,ACC0050,ACC0074,24500,2026-03-19 04:42:49,cash-deposit,Narmada National Bank,Electricity bill
+TXN-0121,ACC0076,ACC0001,75000,2026-03-19 07:24:11,IMPS,Vindhya Urban Bank,Commodity plan deposit
+TXN-0122,ACC0026,ACC0001,190000,2026-03-19 09:54:51,IMPS,Ratnagiri Commercial Bank,Booking amount
+TXN-0123,ACC0030,EXTERNAL-CASH,49300,2026-03-19 10:27:27,UPI,Vindhya Urban Bank,Grocery payment
+TXN-0124,ACC0068,ACC0001,120000,2026-03-19 11:54:04,NEFT,Chandrabhaga Bank Ltd,Advance for allotment
+TXN-0125,ACC0001,ACC0003,126000,2026-03-19 23:04:31,NEFT,Vindhya Urban Bank,Advisory charges
+TXN-0126,ACC0041,ACC0001,98000,2026-03-20 03:49:54,UPI,Chandrabhaga Bank Ltd,Commodity plan deposit
+TXN-0127,ACC0016,ACC0012,46000,2026-03-20 11:39:00,IMPS,Narmada National Bank,Trip settlement 19/03
+TXN-0128,ACC0016,ACC0015,18500,2026-03-20 11:49:00,IMPS,Narmada National Bank,Trip settlement 19/03
+TXN-0129,ACC0016,ACC0013,31000,2026-03-20 12:21:00,IMPS,Narmada National Bank,Trip settlement 19/03
+TXN-0130,ACC0016,ACC0011,52000,2026-03-20 13:15:00,IMPS,Narmada National Bank,Trip settlement 19/03
+TXN-0131,ACC0014,ACC0016,1420000,2026-03-20 16:30:00,RTGS,Narmada National Bank,Consignment settlement - lot 41
+TXN-0132,ACC0026,ACC0018,61400,2026-03-21 06:30:00,NEFT,Ratnagiri Commercial Bank,Salary credit - night shift allowance
+TXN-0133,ACC0001,ACC0004,1850000,2026-03-21 11:40:00,NEFT,Vindhya Urban Bank,Advance against purchase order ATS/PO/2026/117
+TXN-0134,ACC0058,EXTERNAL-CASH,26000,2026-03-21 13:23:32,IMPS,Girnar Small Finance Bank,Salary credit
+TXN-0135,ACC0008,ACC0002,192000,2026-03-21 20:26:45,NEFT,Vindhya Urban Bank,Professional fees
+TXN-0136,ACC0004,ACC0005,1805000,2026-03-22 09:15:00,NEFT,Girnar Small Finance Bank,Settlement - travel bookings
+TXN-0137,ACC0078,EXTERNAL-CASH,30500,2026-03-22 10:53:34,IMPS,Ratnagiri Commercial Bank,Medical shop payment
+TXN-0138,ACC0024,EXTERNAL-CASH,49600,2026-03-22 14:34:01,NEFT,Ratnagiri Commercial Bank,Water tax
+TXN-0139,ACC0042,ACC0024,80900,2026-03-22 15:11:53,NEFT,Narmada National Bank,Rent
+TXN-0140,ACC0001,ACC0007,171000,2026-03-23 07:09:55,NEFT,Vindhya Urban Bank,Vendor settlement
+TXN-0141,ACC0005,ACC0006,1758000,2026-03-23 07:25:00,RTGS,Chandrabhaga Bank Ltd,Payment towards cloth consignment
+TXN-0142,ACC0006,EXTERNAL-CASH,1750000,2026-03-23 10:52:00,cash-withdrawal,Narmada National Bank,Self - cash withdrawal at branch counter
+TXN-0143,ACC0074,EXTERNAL-CASH,13900,2026-03-23 12:15:52,IMPS,Vindhya Urban Bank,School fees
+TXN-0144,ACC0067,ACC0030,29300,2026-03-23 14:52:44,cash-deposit,Narmada National Bank,Insurance premium
+TXN-0145,ACC0008,ACC0002,307000,2026-03-23 15:26:03,NEFT,Vindhya Urban Bank,Consultancy retainer
+TXN-0146,ACC0020,EXTERNAL-CASH,2340,2026-03-23 19:00:00,UPI,Ratnagiri Commercial Bank,Electricity bill payment
+TXN-0147,ACC0039,EXTERNAL-CASH,2200,2026-03-23 20:48:43,cash-withdrawal,Ratnagiri Commercial Bank,Grocery payment
+TXN-0148,ACC0016,ACC0017,159000,2026-03-24 15:09:09,NEFT,Narmada National Bank,Diesel reimbursement
+TXN-0149,ACC0042,EXTERNAL-CASH,65900,2026-03-25 05:25:13,cash-withdrawal,Narmada National Bank,Fuel payment
+TXN-0150,ACC0022,EXTERNAL-CASH,74000,2026-03-25 06:22:42,cash-deposit,Chandrabhaga Bank Ltd,Scrap sale collection
+TXN-0151,ACC0046,EXTERNAL-CASH,74200,2026-03-25 12:27:05,IMPS,Ratnagiri Commercial Bank,EMI - two wheeler loan
+TXN-0152,ACC0017,ACC0015,15000,2026-03-25 20:23:08,NEFT,Vindhya Urban Bank,Handling charges
+TXN-0153,ACC0077,EXTERNAL-CASH,57100,2026-03-26 04:48:13,NEFT,Chandrabhaga Bank Ltd,Medical shop payment
+TXN-0154,ACC0017,ACC0015,179000,2026-03-26 07:15:37,UPI,Vindhya Urban Bank,Trip advance
+TXN-0155,ACC0071,EXTERNAL-CASH,51800,2026-03-26 09:29:00,NEFT,Vindhya Urban Bank,Grocery payment
+TXN-0156,ACC0027,EXTERNAL-CASH,60600,2026-03-26 12:18:03,UPI,Girnar Small Finance Bank,Society maintenance
+TXN-0157,ACC0076,ACC0066,45300,2026-03-26 18:04:01,IMPS,Vindhya Urban Bank,Grocery payment
+TXN-0158,ACC0060,ACC0077,44000,2026-03-26 21:35:51,UPI,Narmada National Bank,Medical shop payment
+TXN-0159,ACC0066,ACC0043,49400,2026-03-27 01:54:17,UPI,Vindhya Urban Bank,EMI - two wheeler loan
+TXN-0160,ACC0006,ACC0001,350000,2026-03-27 12:00:00,cash-deposit,Narmada National Bank,Cash deposit - shop collection
+TXN-0161,ACC0056,EXTERNAL-CASH,31200,2026-03-27 13:52:31,cash-withdrawal,Ratnagiri Commercial Bank,Mobile recharge
+TXN-0162,ACC0059,EXTERNAL-CASH,28900,2026-03-27 15:46:56,IMPS,Sahyadri Cooperative Bank,Fixed deposit renewal
+TXN-0163,ACC0014,ACC0016,980000,2026-03-29 15:10:00,RTGS,Narmada National Bank,Consignment settlement - lot 42
+TXN-0164,ACC0017,ACC0015,100000,2026-03-29 21:14:17,UPI,Vindhya Urban Bank,Handling charges
+TXN-0165,ACC0076,EXTERNAL-CASH,70400,2026-03-30 03:06:40,cash-withdrawal,Vindhya Urban Bank,Mobile recharge
+TXN-0166,ACC0021,EXTERNAL-CASH,10000,2026-03-30 07:26:35,UPI,Vindhya Urban Bank,Supplier payment - handloom
+TXN-0167,ACC0054,EXTERNAL-CASH,69700,2026-03-30 10:56:15,NEFT,Sahyadri Cooperative Bank,Transfer to family
+TXN-0168,ACC0028,EXTERNAL-CASH,24300,2026-03-30 11:01:03,UPI,Ratnagiri Commercial Bank,EMI - two wheeler loan
+TXN-0169,ACC0025,ACC0050,57400,2026-03-30 16:34:42,cash-withdrawal,Ratnagiri Commercial Bank,Fixed deposit renewal
+TXN-0170,ACC0014,ACC0016,163000,2026-03-31 10:21:38,IMPS,Narmada National Bank,Wages
+TXN-0171,ACC0001,ACC0008,88000,2026-03-31 12:26:56,RTGS,Vindhya Urban Bank,Professional fees
+TXN-0172,ACC0058,EXTERNAL-CASH,63300,2026-03-31 17:11:09,IMPS,Girnar Small Finance Bank,Mobile recharge
+TXN-0173,ACC0063,EXTERNAL-CASH,56100,2026-03-31 17:31:47,IMPS,Chandrabhaga Bank Ltd,Water tax
+TXN-0174,ACC0028,EXTERNAL-CASH,62400,2026-04-01 01:27:31,NEFT,Ratnagiri Commercial Bank,Medical shop payment
+TXN-0175,ACC0038,ACC0068,4300,2026-04-01 05:05:37,UPI,Ratnagiri Commercial Bank,EMI - two wheeler loan
+TXN-0176,ACC0069,ACC0061,64900,2026-04-01 08:47:25,NEFT,Narmada National Bank,Grocery payment
+TXN-0177,ACC0078,EXTERNAL-CASH,73600,2026-04-01 13:57:48,NEFT,Ratnagiri Commercial Bank,Grocery payment
+TXN-0178,ACC0072,ACC0057,69700,2026-04-01 20:45:08,IMPS,Narmada National Bank,Insurance premium
+TXN-0179,ACC0075,ACC0044,42600,2026-04-01 22:11:30,cash-deposit,Girnar Small Finance Bank,Salary credit
+TXN-0180,ACC0001,ACC0004,640000,2026-04-02 10:10:00,NEFT,Vindhya Urban Bank,Advance ATS/PO/2026/154
+TXN-0181,ACC0040,EXTERNAL-CASH,65100,2026-04-02 13:06:58,IMPS,Ratnagiri Commercial Bank,EMI - two wheeler loan
+TXN-0182,ACC0004,ACC0005,624000,2026-04-02 18:40:00,UPI,Girnar Small Finance Bank,Ticketing settlement
+TXN-0183,ACC0022,EXTERNAL-CASH,60000,2026-04-02 22:37:51,cash-deposit,Chandrabhaga Bank Ltd,Scrap sale collection
+TXN-0184,ACC0041,ACC0068,74000,2026-04-03 00:23:03,NEFT,Chandrabhaga Bank Ltd,Electricity bill
+TXN-0185,ACC0077,EXTERNAL-CASH,83000,2026-04-03 02:33:19,cash-deposit,Chandrabhaga Bank Ltd,Society maintenance
+TXN-0186,ACC0005,ACC0006,608000,2026-04-03 08:05:00,NEFT,Chandrabhaga Bank Ltd,Consignment part payment
+TXN-0187,ACC0016,ACC0012,123000,2026-04-03 15:21:20,UPI,Narmada National Bank,Handling charges
+TXN-0188,ACC0059,EXTERNAL-CASH,13200,2026-04-03 16:27:02,NEFT,Sahyadri Cooperative Bank,Fixed deposit renewal
+TXN-0189,ACC0016,ACC0012,149000,2026-04-03 18:42:39,UPI,Narmada National Bank,Storage rental
+TXN-0190,ACC0078,EXTERNAL-CASH,14100,2026-04-04 04:20:57,cash-deposit,Ratnagiri Commercial Bank,Rent
+TXN-0191,ACC0051,EXTERNAL-CASH,22200,2026-04-04 15:14:21,IMPS,Vindhya Urban Bank,Society maintenance
+TXN-0192,ACC0029,ACC0045,48000,2026-04-05 08:57:09,cash-withdrawal,Chandrabhaga Bank Ltd,Society maintenance
+TXN-0193,ACC0016,ACC0017,145000,2026-04-05 13:15:41,IMPS,Narmada National Bank,Trip advance
+TXN-0194,ACC0049,EXTERNAL-CASH,19400,2026-04-05 20:40:46,cash-deposit,Sahyadri Cooperative Bank,Fuel payment
+TXN-0195,ACC0071,ACC0034,14900,2026-04-06 04:55:43,UPI,Vindhya Urban Bank,Society maintenance
+TXN-0196,ACC0060,EXTERNAL-CASH,7600,2026-04-06 05:28:58,NEFT,Narmada National Bank,Water tax
+TXN-0197,ACC0024,ACC0057,48000,2026-04-07 13:44:43,IMPS,Ratnagiri Commercial Bank,EMI - two wheeler loan
+TXN-0198,ACC0077,ACC0049,50500,2026-04-07 16:55:15,cash-deposit,Chandrabhaga Bank Ltd,Salary credit
+TXN-0199,ACC0014,ACC0016,84000,2026-04-07 18:55:06,IMPS,Narmada National Bank,Freight charges
+TXN-0200,ACC0064,ACC0028,66300,2026-04-07 22:59:06,cash-deposit,Ratnagiri Commercial Bank,Transfer to family
+TXN-0201,ACC0001,ACC0008,68000,2026-04-08 04:28:55,IMPS,Vindhya Urban Bank,Consultancy retainer
+TXN-0202,ACC0068,ACC0063,5300,2026-04-08 05:11:42,cash-withdrawal,Chandrabhaga Bank Ltd,Medical shop payment
+TXN-0203,ACC0078,ACC0041,65700,2026-04-08 08:15:32,IMPS,Ratnagiri Commercial Bank,Medical shop payment
+TXN-0204,ACC0032,EXTERNAL-CASH,11900,2026-04-08 10:58:05,cash-withdrawal,Narmada National Bank,Electricity bill
+TXN-0205,ACC0055,EXTERNAL-CASH,45200,2026-04-08 12:19:12,NEFT,Girnar Small Finance Bank,Electricity bill
+TXN-0206,ACC0014,ACC0016,1155000,2026-04-08 14:45:00,RTGS,Narmada National Bank,Consignment settlement - lot 43
+TXN-0207,ACC0065,EXTERNAL-CASH,4600,2026-04-09 04:57:23,cash-withdrawal,Sahyadri Cooperative Bank,Rent
+TXN-0208,ACC0070,EXTERNAL-CASH,61300,2026-04-09 05:52:20,NEFT,Narmada National Bank,Society maintenance
+TXN-0209,ACC0008,ACC0009,375000,2026-04-09 12:05:00,NEFT,Vindhya Urban Bank,Logistics advisory - Q1 retainer
+TXN-0210,ACC0021,EXTERNAL-CASH,37000,2026-04-09 20:06:56,UPI,Vindhya Urban Bank,Supplier payment - handloom
+TXN-0211,ACC0044,EXTERNAL-CASH,45600,2026-04-10 04:30:27,cash-deposit,Girnar Small Finance Bank,Electricity bill
+TXN-0212,ACC0008,ACC0002,435000,2026-04-10 05:54:22,IMPS,Vindhya Urban Bank,Professional fees
+TXN-0213,ACC0022,EXTERNAL-CASH,77000,2026-04-10 07:15:54,cash-deposit,Chandrabhaga Bank Ltd,Scrap sale collection
+TXN-0214,ACC0028,EXTERNAL-CASH,64300,2026-04-10 10:57:47,cash-withdrawal,Ratnagiri Commercial Bank,Fuel payment
+TXN-0215,ACC0070,EXTERNAL-CASH,52200,2026-04-10 22:08:32,cash-withdrawal,Narmada National Bank,Transfer to family
+TXN-0216,ACC0036,ACC0050,7800,2026-04-10 23:51:52,cash-withdrawal,Sahyadri Cooperative Bank,Grocery payment
+TXN-0217,ACC0027,ACC0030,44900,2026-04-11 03:14:45,cash-withdrawal,Girnar Small Finance Bank,Transfer to family
+TXN-0218,ACC0017,ACC0015,193000,2026-04-11 03:18:37,IMPS,Vindhya Urban Bank,Wages
+TXN-0219,ACC0022,EXTERNAL-CASH,58000,2026-04-11 08:06:00,cash-deposit,Chandrabhaga Bank Ltd,Scrap sale collection
+TXN-0220,ACC0064,EXTERNAL-CASH,41100,2026-04-11 11:11:10,cash-deposit,Ratnagiri Commercial Bank,Transfer to family
+TXN-0221,ACC0071,ACC0060,79300,2026-04-11 18:35:25,cash-withdrawal,Vindhya Urban Bank,Electricity bill
+TXN-0222,ACC0052,ACC0048,33700,2026-04-11 23:26:24,IMPS,Vindhya Urban Bank,Grocery payment
+TXN-0223,ACC0022,EXTERNAL-CASH,79000,2026-04-12 17:20:44,cash-deposit,Chandrabhaga Bank Ltd,Scrap sale collection
+TXN-0224,ACC0055,EXTERNAL-CASH,13100,2026-04-12 18:02:45,cash-withdrawal,Girnar Small Finance Bank,EMI - two wheeler loan
+TXN-0225,ACC0042,ACC0037,56800,2026-04-12 23:42:09,cash-withdrawal,Narmada National Bank,Electricity bill
