@@ -1,5 +1,5 @@
 # SIH 26189 — backend data pipeline
-
+---------------------------------------------------------------------------------------
 Ingestion -> entity resolution -> graph -> network analysis -> rule-based pattern detection.
 No ML and no LLM anywhere in this pipeline; every output is deterministic and traceable to
 an Evidence row.
