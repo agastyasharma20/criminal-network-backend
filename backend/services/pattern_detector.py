@@ -17,7 +17,7 @@ from collections import defaultdict
 from datetime import timedelta
 
 import networkx as nx
-from sqlalchemy import select
+from sqlalchemy import delete, select
 
 from backend.models.db import Alert, Document, Entity, Evidence, RelationshipRow
 from backend.services import entity_resolution as er
@@ -58,7 +58,7 @@ def detect_pass_through_chains(
     window_hours: float = 48.0,
     min_hops: int = 3,
     max_hops: int = 6,
-    cut_min: float = 0.005,
+    cut_min: float = 0.003,
     cut_max: float = 0.10,
     min_amount_inr: float = 100_000.0,
     min_gap_minutes: float = 1.0,
@@ -116,10 +116,13 @@ def detect_pass_through_chains(
     for t in txns:
         extend([t])
 
-    # keep only maximal chains (drop a chain that is a prefix of a longer one)
+    def is_subchain(sub, main):
+        return any(main[i:i + len(sub)] == sub for i in range(len(main) - len(sub) + 1))
+
+    # keep only maximal chains (drop a chain that is a subchain of another chain)
     keyed = {tuple(c["txn_id"] for c in ch): ch for ch in chains}
     maximal = [ch for k, ch in keyed.items()
-               if not any(other != k and other[:len(k)] == k for other in keyed)]
+               if not any(other != k and is_subchain(k, other) for other in keyed)]
 
     alerts = []
     for ch in sorted(maximal, key=lambda c: -c[0]["amount"]):
@@ -368,15 +371,19 @@ def detect_geographic_cooccurrence(
                     "people": people, "sources": sources, "events": bucket,
                 })
 
-    # de-duplicate overlapping windows: keep the one with most participants per site/cluster
+    # de-duplicate overlapping windows: combine participants and sources across overlapping windows
     raw_windows.sort(key=lambda w: (w["site"], w["start"]))
     merged = []
     for w in raw_windows:
         if merged and merged[-1]["site"] == w["site"] and \
                 w["start"] <= merged[-1]["end"] + timedelta(minutes=window_minutes):
             prev = merged[-1]
-            if len(w["people"]) > len(prev["people"]):
-                prev.update(people=w["people"], sources=w["sources"], events=w["events"])
+            prev["people"].update(w["people"])
+            prev["sources"].update(w["sources"])
+            existing_event_ids = {id(e) for e in prev["events"]}
+            for e in w["events"]:
+                if id(e) not in existing_event_ids:
+                    prev["events"].append(e)
             prev["end"] = max(prev["end"], w["end"])
         else:
             merged.append(dict(w))
@@ -520,17 +527,20 @@ def find_paths(
         if min_edge_support > 1 and meta.get("aggregate"):
             if int(meta.get("call_count") or 0) < min_edge_support:
                 continue
-        if not u.has_edge(a, b) or d.get("confidence", 1) > u[a][b].get("confidence", 0):
-            u.add_edge(a, b)
+        edge_conf = float(d.get("confidence") or 1.0)
+        if not u.has_edge(a, b) or edge_conf > u[a][b].get("confidence", 0):
+            u.add_edge(a, b, confidence=edge_conf)
 
     blocked = set(transit_blocked_types or ())
+    if blocked:
+        nodes_to_remove = [n for n in u.nodes if n != s and n != t and ents[n].type in blocked]
+        u.remove_nodes_from(nodes_to_remove)
+
     results = []
     try:
         for path in nx.shortest_simple_paths(u, s, t):
             if len(path) - 1 > max_hops:
                 break
-            if any(ents[n].type in blocked for n in path[1:-1]):
-                continue
             results.append(_describe_path(session, g, ents, path))
             if len(results) >= max_paths:
                 break
@@ -705,6 +715,7 @@ def rank_by_corroboration(session, case_id: str, detector_output: dict,
 
 
 def persist_alerts(session, case_id: str, alerts: list[dict]):
+    session.execute(delete(Alert).where(Alert.case_id == case_id))
     for a in alerts:
         session.add(Alert(case_id=case_id, entity_id=a.get("entity_id"), type=a["type"],
                           severity=a.get("severity", "REVIEW"), reason=a["reason"],

@@ -12,14 +12,19 @@ human verification". Downstream text must preserve that framing.
 from __future__ import annotations
 
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 
 from sqlalchemy import (
-    Column, DateTime, Float, ForeignKey, Integer, String, Text, UniqueConstraint, create_engine,
+    Column, DateTime, Float, ForeignKey, Index, Integer, String, Text, UniqueConstraint, create_engine, event,
 )
+from sqlalchemy.engine import Engine
 from sqlalchemy.orm import declarative_base, relationship, sessionmaker
 
 Base = declarative_base()
+
+
+def utcnow():
+    return datetime.now(timezone.utc)
 
 
 class Case(Base):
@@ -28,7 +33,7 @@ class Case(Base):
     name = Column(String, nullable=False)
     case_type = Column(String)
     status = Column(String, default="OPEN")
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=utcnow)
 
 
 class Document(Base):
@@ -36,17 +41,17 @@ class Document(Base):
     FILE (id == the filename), so every derived row can point back at its origin."""
     __tablename__ = "documents"
     id = Column(String, primary_key=True)
-    case_id = Column(String, ForeignKey("cases.id"), nullable=False)
+    case_id = Column(String, ForeignKey("cases.id"), nullable=False, index=True)
     filename = Column(String, nullable=False)
     document_type = Column(String)          # STRUCTURED_CSV | STRUCTURED_JSON | FIR | SURVEILLANCE | INTEL
     text = Column(Text)                     # free-text body, when the source has one (e.g. FIR narrative)
-    uploaded_at = Column(DateTime, default=datetime.utcnow)
+    uploaded_at = Column(DateTime, default=utcnow)
 
 
 class Entity(Base):
     __tablename__ = "entities"
     id = Column(Integer, primary_key=True, autoincrement=True)
-    case_id = Column(String, ForeignKey("cases.id"), nullable=False)
+    case_id = Column(String, ForeignKey("cases.id"), nullable=False, index=True)
     type = Column(String, nullable=False)   # PERSON | PHONE | VEHICLE | BANK_ACCOUNT | LOCATION | ...
     name = Column(String, nullable=False)
     normalized_name = Column(String, index=True)
@@ -67,14 +72,14 @@ class Entity(Base):
 class RelationshipRow(Base):
     __tablename__ = "relationships"
     id = Column(Integer, primary_key=True, autoincrement=True)
-    case_id = Column(String, ForeignKey("cases.id"), nullable=False)
-    source_entity_id = Column(Integer, ForeignKey("entities.id"), nullable=False)
-    target_entity_id = Column(Integer, ForeignKey("entities.id"), nullable=False)
+    case_id = Column(String, ForeignKey("cases.id"), nullable=False, index=True)
+    source_entity_id = Column(Integer, ForeignKey("entities.id"), nullable=False, index=True)
+    target_entity_id = Column(Integer, ForeignKey("entities.id"), nullable=False, index=True)
     relationship_type = Column(String, nullable=False)
     confidence = Column(Float, default=1.0)
     weight = Column(Float, default=1.0)
     occurred_at = Column(DateTime)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=utcnow)
 
     # ADDITIVE: same rationale as Entity.natural_id (idempotent upsert), plus a small JSON
     # payload so structural detectors can read facts like transaction amount or call duration
@@ -92,8 +97,8 @@ class RelationshipRow(Base):
 class Evidence(Base):
     __tablename__ = "evidence"
     id = Column(Integer, primary_key=True, autoincrement=True)
-    relationship_id = Column(Integer, ForeignKey("relationships.id"), nullable=False)
-    document_id = Column(String, ForeignKey("documents.id"), nullable=False)
+    relationship_id = Column(Integer, ForeignKey("relationships.id"), nullable=False, index=True)
+    document_id = Column(String, ForeignKey("documents.id"), nullable=False, index=True)
     page = Column(String)                   # for CSV sources: the source row identifier
     text_snippet = Column(Text)
     confidence = Column(Float, default=1.0)
@@ -102,26 +107,37 @@ class Evidence(Base):
 class Analysis(Base):
     __tablename__ = "analysis"
     id = Column(Integer, primary_key=True, autoincrement=True)
-    case_id = Column(String, ForeignKey("cases.id"), nullable=False)
-    entity_id = Column(Integer, ForeignKey("entities.id"), nullable=False)
+    case_id = Column(String, ForeignKey("cases.id"), nullable=False, index=True)
+    entity_id = Column(Integer, ForeignKey("entities.id"), nullable=False, index=True)
     metric = Column(String, nullable=False)
     value = Column(Float)
-    computed_at = Column(DateTime, default=datetime.utcnow)
+    computed_at = Column(DateTime, default=utcnow)
+
+    __table_args__ = (Index("ix_analysis_case_entity", "case_id", "entity_id"),)
 
 
 class Alert(Base):
     """An investigative LEAD. Never a finding of wrongdoing."""
     __tablename__ = "alerts"
     id = Column(Integer, primary_key=True, autoincrement=True)
-    case_id = Column(String, ForeignKey("cases.id"), nullable=False)
-    entity_id = Column(Integer, ForeignKey("entities.id"))
+    case_id = Column(String, ForeignKey("cases.id"), nullable=False, index=True)
+    entity_id = Column(Integer, ForeignKey("entities.id"), index=True)
     type = Column(String, nullable=False)
     severity = Column(String)               # INFORMATIONAL | REVIEW | PRIORITY_REVIEW
     reason = Column(Text)
     evidence_ids = Column(Text)             # JSON list
 
+    __table_args__ = (Index("ix_alert_case_entity", "case_id", "entity_id"),)
+
 
 # --------------------------------------------------------------------------- session
+@event.listens_for(Engine, "connect")
+def set_sqlite_pragma(dbapi_connection, connection_record):
+    cursor = dbapi_connection.cursor()
+    cursor.execute("PRAGMA foreign_keys=ON")
+    cursor.close()
+
+
 def make_engine(db_path: str = "sih26189.db"):
     return create_engine(f"sqlite:///{db_path}", future=True)
 
@@ -130,3 +146,4 @@ def init_db(db_path: str = "sih26189.db"):
     engine = make_engine(db_path)
     Base.metadata.create_all(engine)
     return sessionmaker(bind=engine, future=True, expire_on_commit=False)
+
