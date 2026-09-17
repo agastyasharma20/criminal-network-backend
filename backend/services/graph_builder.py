@@ -161,10 +161,10 @@ def person_projection(session, case_id: str, g: nx.MultiDiGraph | None = None,
             h.add_edge(a, b, weight=contrib, support=support, edge_count=1,
                        relationship_types={d["relationship_type"]})
 
-    # correction 2: drop under-supported pairs
+    # correction 2: drop under-supported pairs (only applies to pure telephone links)
     if min_edge_support > 1:
         h.remove_edges_from([(a, b) for a, b, d in h.edges(data=True)
-                             if d["support"] < min_edge_support])
+                             if d["relationship_types"] == {"CALLS"} and d["support"] < min_edge_support])
     for _, _, d in h.edges(data=True):
         d["relationship_types"] = sorted(d["relationship_types"])
     return h

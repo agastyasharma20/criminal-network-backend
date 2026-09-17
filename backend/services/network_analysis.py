@@ -16,7 +16,7 @@ Metrics are computed on TWO views:
 """
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 
 import networkx as nx
 from sqlalchemy import delete, select
@@ -65,7 +65,7 @@ def persist(session, case_id: str, view: str, metrics: dict[str, dict]):
     session.execute(
         delete(Analysis).where(Analysis.case_id == case_id,
                                Analysis.metric.in_([f"{view}.{m}" for m in names])))
-    now = datetime.utcnow()
+    now = datetime.now(timezone.utc)
     for m in names:
         for node_id, value in metrics.get(m, {}).items():
             session.add(Analysis(case_id=case_id, entity_id=node_id, metric=f"{view}.{m}",

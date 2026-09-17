@@ -213,6 +213,8 @@ def detect_sim_name_mismatch(
         return None
 
     registered_pid, status = resolve_alias_verbose(registered, alias_index)
+    if registered_pid and registered_pid == owner_id:
+        return None
     return {
         "phone_id": phone_row.get("phone_id"),
         "number": phone_row.get("number"),

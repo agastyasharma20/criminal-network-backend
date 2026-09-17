@@ -97,6 +97,10 @@ def main(argv=None):
             print(f"  {r['family_count']} families | betweenness {r['betweenness']:.5f} | "
                   f"{r['name']:<22} {'+'.join(r['detector_families'])}")
 
+        alerts_to_persist = chains + spikes + geo
+        pdet.persist_alerts(s, args.case_id, alerts_to_persist)
+        print(f"\n[PERSISTENCE] Successfully persisted {len(alerts_to_persist)} alert(s) to the database.")
+
         print("\n" + "=" * 72)
         print("All outputs above are potential connections and analytical indicators.")
         print("They require verification by an investigator and establish no culpability.")
